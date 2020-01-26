@@ -8,17 +8,17 @@ def isPrime(num):
 
 lst = []
 for i in range(0,16):
-    ele = random.randint(1,75)
-    lst.append(ele)
+    lst.append(random.randint(1,75))
 lst.sort(reverse=True)
 print(lst)
 for x in lst:
     isPrime(x)
 
-'''def descSort(lst,length = 16):
-    for i in range(0,length-1):
-        if lst[i] > lst[i+1]
-            t = lst[i+1]
-            lst[i+1] = lst[i]
-            lst[i] = t
+'''
+    def desc(lst):
+    for i in range(0,15):
+        for j in range(i+1,16):
+            if lst[i] < lst[j]:
+                lst[i],lst[j] = lst[j],lst[i]
+    print(lst)
 '''
